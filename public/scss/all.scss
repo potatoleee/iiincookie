@@ -1,5 +1,19 @@
+@import 'reset';
+@import 'base';
+@import 'variables';
 
 
-h1{
-    color:red;
+nav{
+    ul{
+        li{
+            a{
+                color:red;
+            }
+        }
+    }
+}
+.banner{
+    img{
+    height:100px;
+    }
 }

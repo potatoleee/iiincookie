@@ -1,0 +1,31 @@
+
+.container{
+   
+    max-width: 1172px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+body{
+   font-family: 'Noto Sans TC', sans-serif' , Noto Serif TC', serif;
+   font-weight: 400;
+   background-color:$primary;
+   color:#161A14;
+   line-height: 1.5;
+}
+
+
+a{
+    text-decoration: none;
+}     
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+p{
+    font-size: 16px;
+}
