@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/scss/all.css">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/147f962b26.js" crossorigin="anonymous"></script>
@@ -14,20 +13,88 @@
 </head>
 <body>
     <header>
+  
       <nav>
-        <a href="index.html"><img src=".//public/images/logoLg.svg" alt=""></a>
-       <ul>
+        <div class="topnav container">
+        <a class="logo"href="index.html">
+          <img src=".//public/images/logoLg.svg" alt="">
+        </a>
+       <ul class="nav-content">
         <li><a href="#">關於iiin</a></li>
         <li><a href="#">商品</a></li>
         <li><a href="#">FAQ</a></li>
         <li><a href="#">鐵盒客製</a></li>
-        <li><a href="#">item5</a></li>
-        <li><a href="#">item6</a></li>
         <li><a href="#"><img src=".//public/images/account.svg" alt=""></a></li>
         <li><a href="#"><img src=".//public/images/shopping-cart.svg" alt=""></a></li>
+      </div>
       </nav>  
     </header>
-    <div class="banner"><img src=".//public/images/chocolate.JPG" alt=""></div>
+    <!-- 首圖start -->
+      <div class="banner">
+        <div class="banner-text container">
+          <h1>餅乾生產餡</h1>
+           <h2>呈現最驚豔的味</h2>
+        </div>
+      </div>
+    <!-- 首圖end -->
+     
+      <!-- 簡介start -->
+      <section class="intro container">
+        <ul>
+          <li class="orign">
+            <img src=".//public/images/lightwood.JPG" alt="">
+            <div class="orign-text">
+              <h4 class="orign-title text-lg">orgin</h4>
+               <p>因緣際會幫忙朋友製作了餅乾，
+              變想要挑戰鐵盒餅乾
+              朋友一吃驚艷，鼓勵我創業讓大家
+              吃得到這美味的夾餡餅乾
+              變誤打誤撞開始生產餡這個品牌
+              從沒想過餅乾會成為另一個事業，
+              人生就是這麼奇妙？</p>
+            </div>
+          </li>
+
+          <li class="package">
+            <img src=".//public/images/boxflower.JPG" alt="">
+            <div class="package-text">
+               <h4 class="package-title text-lg">package</h4>
+                <p>每當節日收到花，心情都會非常好
+              因此，每當辛苦烤完餅乾後
+              ，最期待的便是包盒的環節，
+              我會去花市看看現在適合的包材
+              希望你們收到也能感到暖心。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+       <!-- 簡介end -->
+
+       <!-- cookie start -->
+       <div class="cookie ">
+         <div class="container">
+          <h2 class="cookie-title">Cookie</h2>
+             <ul class="cookie-item d-flex">
+                 <li class="col-4"><a href="cookie.html"><img src="https://aoko.tw/wp-content/uploads/2021/08/%E9%BA%BB%E8%96%8F%E6%9C%88%E9%A4%85-4.jpg" alt=""></a>
+                  <p>伯爵巧克力</p>
+                </li>
+                 <li class="col-4"><a href="cookie.html"><img src="https://aoko.tw/wp-content/uploads/2021/08/%E9%BA%BB%E8%96%8F%E6%9C%88%E9%A4%85-66.jpg" alt=""></a>
+                <p>伯爵巧克力</p>
+                </li>
+                 <li class="col-4"><a href="cookie.html"><img src="https://aoko.tw/wp-content/uploads/2021/08/%E9%BA%BB%E8%96%8F%E6%9C%88%E9%A4%85-66.jpg" alt=""></a>
+                <p>伯爵巧克力</p>
+                </li>
+                 <li class="col-4"><a href="cookie.html"><img src="https://aoko.tw/wp-content/uploads/2021/08/%E9%BA%BB%E8%96%8F%E6%9C%88%E9%A4%85-66.jpg" alt=""></a>
+                <p>伯爵巧克力</p>
+                </li>
+               </ul>
+          <p class="viewmore">viewmore</p>
+         </div>
+      </div>
+
+
+    
+    
     <footer></footer>
 </body>
 </html>
