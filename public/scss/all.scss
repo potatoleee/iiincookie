@@ -36,9 +36,13 @@ nav{
 .banner{
    height: 100vh;
    background-image: url("../images/chocolate.JPG");
-   background-size: cover;
-  
-  
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+}
+@media (min-width:768px){
+    .banner{
+        
+    }
 }
 .banner-text{
     position: relative;
@@ -121,6 +125,7 @@ nav{
     .viewmore{
         position: relative;
         padding: 32px 0px;
+        padding-right: 48px;
         text-align: right;
         color:$primary;
 
@@ -131,6 +136,7 @@ nav{
             width: 40px;
             background-color: $primary;
             top:calc(50% + 0.1rem);
+            right:1px;
 
         }
     }

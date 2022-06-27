@@ -182,7 +182,8 @@ nav .nav-content li a {
 .banner {
   height: 100vh;
   background-image: url("../images/chocolate.JPG");
-  background-size: cover;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .banner-text {
@@ -277,6 +278,7 @@ nav .nav-content li a {
 .cookie .viewmore {
   position: relative;
   padding: 32px 0px;
+  padding-right: 48px;
   text-align: right;
   color: #F0F0F0;
 }
@@ -288,6 +290,7 @@ nav .nav-content li a {
   width: 40px;
   background-color: #F0F0F0;
   top: calc(50% + 0.1rem);
+  right: 1px;
 }
 
 .cookie-item {
