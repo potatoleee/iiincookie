@@ -181,15 +181,16 @@ nav .nav-content li a {
 
 .banner {
   height: 100vh;
-  background-image: url("../images/chocolate.JPG");
+  background-image: url("../images/newbanner.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .banner-text {
-  position: relative;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
   color: #F0F0F0;
-  top: 70%;
 }
 
 .intro {
@@ -275,15 +276,19 @@ nav .nav-content li a {
   color: #F0F0F0;
 }
 
-.cookie .viewmore {
-  position: relative;
+.cookie .cookie-viewMore {
   padding: 32px 0px;
+}
+
+.cookie .cookie-viewMore .viewMore {
+  display: block;
+  position: relative;
   padding-right: 48px;
   text-align: right;
   color: #F0F0F0;
 }
 
-.cookie .viewmore::before {
+.cookie .cookie-viewMore .viewMore::before {
   position: absolute;
   content: "";
   height: 1px;

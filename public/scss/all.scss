@@ -35,19 +35,20 @@ nav{
 
 .banner{
    height: 100vh;
-   background-image: url("../images/chocolate.JPG");
+   background-image: url("../images/newbanner.jpg");
    background-size: 100% auto;
    background-repeat: no-repeat;
 }
-@media (min-width:768px){
-    .banner{
+// @media (min-width:768px){
+//     .banner{
         
-    }
-}
+//     }
+// }
+
 .banner-text{
-    position: relative;
+    writing-mode: vertical-lr;
     color:$primary;
-    top:70%;
+    
 }
 
 .intro{
@@ -121,14 +122,15 @@ nav{
         padding: 32px 0px;
         color:$primary;
     }
-
-    .viewmore{
+.cookie-viewMore{
+    padding: 32px 0px;
+    .viewMore{
+        display: block;
         position: relative;
-        padding: 32px 0px;
         padding-right: 48px;
         text-align: right;
         color:$primary;
-
+    
         &::before{
             position: absolute;
             content: "";
@@ -140,6 +142,7 @@ nav{
 
         }
     }
+}
 }
 .cookie-item{
  
