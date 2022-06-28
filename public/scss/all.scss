@@ -46,7 +46,7 @@ nav{
 // }
 .banner{
     position: relative;
-    
+
     img{
         padding-top: 50px;
     }
@@ -56,14 +56,19 @@ nav{
     writing-mode: vertical-lr;
     color:$primary;
     position: absolute;
-    top:40%;
+    top:30%;
     right:12%;
+
+    h3{
+        padding-top: 120px;
+    }
     
 }
 
 .intro{
     margin-top: 100px;
     margin-bottom: 100px;
+
     .orign,.package{
         display: flex;
         align-items: center;
