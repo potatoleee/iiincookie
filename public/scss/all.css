@@ -372,27 +372,34 @@ nav .nav-content li a {
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   position: absolute;
-  top: -42px;
+  top: -51px;
   left: 24px;
   letter-spacing: 8px;
+  font-weight: 500;
 }
 
 .present-list .present-item p {
   text-align: center;
+  margin-top: 24px;
 }
 
-.present-list .present-item a {
-  text-align: center;
+.present-list .present-item .present-more {
+  margin-left: 24px;
+  margin-top: 16px;
+}
+
+.present-list .present-item .present-more a {
   position: relative;
   font-size: 12px;
 }
 
-.present-list .present-item a::before {
+.present-list .present-item .present-more a::before {
   position: absolute;
   content: "";
   height: 1px;
   width: 40px;
   background-color: #161A14;
   top: calc(50% + 0.1rem);
+  right: -48px;
 }
 /*# sourceMappingURL=all.css.map */

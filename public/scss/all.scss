@@ -198,16 +198,21 @@ nav{
         .present-item_title{
             writing-mode: vertical-lr;
             position: absolute;
-            top:-42px;
+            top:-51px;
             left:24px;
             letter-spacing: 8px;
+            font-weight: 500;
         }
         
         p{
             text-align: center;
+            margin-top: 24px;
         }
+        .present-more{
+            margin-left: 24px;
+            margin-top: 16px;
+            
         a{
-            text-align: center;
             position: relative;
             font-size: 12px;
            
@@ -218,8 +223,10 @@ nav{
                 width: 40px;
                 background-color: $black-100;
                 top:calc(50% + 0.1rem);
+                right: -48px;
 
             }
+        }
         }
     }
 }
