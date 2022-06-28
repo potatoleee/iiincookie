@@ -1,6 +1,7 @@
 @import 'reset';
-@import 'base';
 @import 'variables';
+@import 'base';
+
 
 header{
     background-color: $primary;
@@ -175,3 +176,50 @@ nav{
     }
 }
 
+.present{
+    margin: 100px 0px;
+
+    h2{
+        margin-bottom: 80px;
+    }
+}
+.present-title{
+    text-align: center;
+    
+}
+.present-list{
+    display: flex;
+    justify-content: space-between;
+    
+    .present-item{
+        width: calc( (100% - 72px) / 3);
+        position: relative;
+
+        .present-item_title{
+            writing-mode: vertical-lr;
+            position: absolute;
+            top:-42px;
+            left:24px;
+            letter-spacing: 8px;
+        }
+        
+        p{
+            text-align: center;
+        }
+        a{
+            text-align: center;
+            position: relative;
+            font-size: 12px;
+           
+            &::before{
+                position: absolute;
+                content: "";
+                height: 1px;
+                width: 40px;
+                background-color: $black-100;
+                top:calc(50% + 0.1rem);
+
+            }
+        }
+    }
+}

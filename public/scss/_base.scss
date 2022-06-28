@@ -26,6 +26,8 @@ body{
 
 a{
     text-decoration: none;
+    color:$black-100;
+   
 }     
 
 img{
@@ -51,6 +53,11 @@ h3{
 }
 h4{
     font-size: 20px;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 400;
+}
+h5{
+    font-size: 16px;
     font-family: 'Noto Serif TC', serif;
     font-weight: 400;
 }

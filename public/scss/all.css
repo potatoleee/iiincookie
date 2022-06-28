@@ -81,6 +81,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #161A14;
 }
 
 img {
@@ -109,6 +110,12 @@ h3 {
 
 h4 {
   font-size: 20px;
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 16px;
   font-family: 'Noto Serif TC', serif;
   font-weight: 400;
 }
@@ -332,5 +339,60 @@ nav .nav-content li a {
   padding: 6px;
   background-color: rgba(22, 26, 20, 0.5);
   color: #F0F0F0;
+}
+
+.present {
+  margin: 100px 0px;
+}
+
+.present h2 {
+  margin-bottom: 80px;
+}
+
+.present-title {
+  text-align: center;
+}
+
+.present-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.present-list .present-item {
+  width: calc( (100% - 72px) / 3);
+  position: relative;
+}
+
+.present-list .present-item .present-item_title {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  position: absolute;
+  top: -42px;
+  left: 24px;
+  letter-spacing: 8px;
+}
+
+.present-list .present-item p {
+  text-align: center;
+}
+
+.present-list .present-item a {
+  text-align: center;
+  position: relative;
+  font-size: 12px;
+}
+
+.present-list .present-item a::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 40px;
+  background-color: #161A14;
+  top: calc(50% + 0.1rem);
 }
 /*# sourceMappingURL=all.css.map */
