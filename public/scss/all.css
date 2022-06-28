@@ -180,10 +180,11 @@ nav .nav-content li a {
 }
 
 .banner {
-  height: 100vh;
-  background-image: url("../images/newbanner.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner img {
+  padding-top: 50px;
 }
 
 .banner-text {
@@ -191,6 +192,9 @@ nav .nav-content li a {
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   color: #F0F0F0;
+  position: absolute;
+  top: 40%;
+  right: 12%;
 }
 
 .intro {
@@ -217,7 +221,7 @@ nav .nav-content li a {
 }
 
 .intro .orign img, .intro .package img {
-  width: 655px;
+  width: 57%;
 }
 
 .intro .orign {
