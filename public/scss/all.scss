@@ -33,24 +33,20 @@ nav{
     }
 }
 
-// .banner{
-//    width: 100vw;
-//    background-image: url("../images/newbanner.jpg");
-//    background-size: cover;
-//    background-repeat: no-repeat;
-// }
+.banner{
+    // 993/1400 讓他等比例縮小
+   padding-bottom: 66.67%;
+   margin-top: 72px;
+   background-image: url("../images/newbanner.jpg");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   position: relative;
+}
 // @media (min-width:768px){
 //     .banner{
         
 //     }
 // }
-.banner{
-    position: relative;
-
-    img{
-        padding-top: 50px;
-    }
-}
 
 .banner-text{
     writing-mode: vertical-lr;
