@@ -230,3 +230,55 @@ nav{
         }
     }
 }
+
+footer{
+    background-color: $secondary;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color:$primary;
+
+    li{
+        padding-top:44px;
+        padding-bottom: 24px;
+    }
+
+    .pagetop{
+        position: relative;
+        padding-right: 9px;
+        
+        &::before{
+            position: absolute;
+            content: "";
+            height: 80px;
+            width: 1px;
+            top:-10px;
+            right: 0px;
+            background-color:$primary;
+        }
+    }
+}
+.instagram{
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    font-family:  'Noto Serif TC', serif;
+    font-weight: 300;
+    padding-bottom: 24px;
+    color:$primary;
+
+    img{
+        margin-right: 16px;
+        color:$primary;
+        font-weight: 300;
+    }
+    
+}
+.copyright{
+    font-size: 12px;
+    font-family:  'Noto Serif TC', serif;
+    font-weight: 300;
+}
