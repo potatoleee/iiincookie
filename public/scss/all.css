@@ -77,6 +77,7 @@ body {
   background-color: #F0F0F0;
   color: #161A14;
   line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -180,10 +181,6 @@ nav .topnav {
           align-items: center;
 }
 
-nav .logo {
-  padding: 20px 0px;
-}
-
 nav .nav-content {
   width: 389px;
   -webkit-box-pack: justify;
@@ -194,8 +191,62 @@ nav .nav-content {
   display: flex;
 }
 
-nav .nav-content li a {
+nav .nav-content a {
+  padding: 24px 0px;
   color: #161A14;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  position: relative;
+}
+
+nav .nav-content a::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0%;
+  margin: auto;
+  color: transparent;
+  background: black;
+  height: 1px;
+}
+
+nav .nav-content .nav-content_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 333px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-content a:hover {
+  color: #492E24;
+}
+
+.nav-content a:after {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.nav-content a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .logo img {
+    width: 127.41px;
+  }
+  nav .nav-content {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  nav .nav-content .nav-content_main {
+    display: none;
+  }
 }
 
 .banner {
@@ -213,12 +264,27 @@ nav .nav-content li a {
           writing-mode: vertical-lr;
   color: #F0F0F0;
   position: absolute;
-  top: 35%;
+  top: 25%;
   right: 12%;
 }
 
-.banner-text h3 {
-  padding-top: 120px;
+.banner-text .banner-text_title {
+  letter-spacing: 20px;
+  padding-right: 30px;
+}
+
+.banner-text .banner-text_content {
+  padding-top: 180px;
+  letter-spacing: 15px;
+}
+
+@media (max-width: 992px) {
+  .banner-text .banner-text_title {
+    font-size: 32px;
+  }
+  .banner-text .banner-text_content {
+    padding-top: 100px;
+  }
 }
 
 .intro {
@@ -352,7 +418,7 @@ nav .nav-content li a {
 }
 
 .present h2 {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .present-title {
@@ -468,6 +534,12 @@ footer {
 
 .copyright {
   font-size: 12px;
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 300;
+}
+
+.pagetop a {
+  color: #F0F0F0;
   font-family: 'Noto Serif TC', serif;
   font-weight: 300;
 }

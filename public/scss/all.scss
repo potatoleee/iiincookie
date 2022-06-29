@@ -13,6 +13,9 @@ nav{
     top:0;
     width: 100%;
     z-index: 999;
+
+
+  
 .topnav{
     display: flex;
     justify-content: space-between;
@@ -20,24 +23,72 @@ nav{
 }
 
 
-.logo{
-    padding: 20px 0px;
-}
     .nav-content{
         width: 389px;
         justify-content: space-between;
         display: flex;
-        li{
-            a{
-                color:$black-100;
+        a{
+            padding: 24px 0px;
+            color:$black-100;
+            transition: all .5s;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 0%;
+                margin: auto;
+                color:transparent;
+                background:black;
+                height: 1px;
             }
+        }
+
+        .nav-content_main{
+            display: flex;
+            width: 333px;
+            justify-content: space-between;
+           
+           
         }
     }
 }
+.nav-content a:hover{
+    color:$brand-color;
+}
+.nav-content a:after{
+    transition: all .5s;
+}
+.nav-content a:hover::after{
+    width: 100%;
+}
+
+@media(max-width:992px){
+    
+        .logo{
+            img{
+                width: 127.41px;
+             }
+        }
+        nav{
+        .nav-content{
+            justify-content: flex-end;
+            .nav-content_main{
+            display: none;
+            }
+            
+        }
+    }
+
+    
+
+}  
 
 .banner{
     // 993/1400 讓他等比例縮小
-   padding-bottom: 66.67%;
+     padding-bottom: 66.67%;
    margin-top: 72px;
    background-image: url("../images/newbanner.jpg");
    background-size: 100%;
@@ -54,13 +105,30 @@ nav{
     writing-mode: vertical-lr;
     color:$primary;
     position: absolute;
-    top:35%;
+    top:25%;
     right:12%;
 
-    h3{
-        padding-top: 120px;
+    .banner-text_title{
+        letter-spacing: 20px;
+        padding-right:30px;
     }
+
+    .banner-text_content{
+        padding-top: 180px;
+        letter-spacing: 15px;
+    }
+}
+@media(max-width:992px){
     
+    .banner-text{
+
+        .banner-text_title{
+            font-size: 32px;
+        }
+        .banner-text_content{
+            padding-top: 100px;
+        }
+    }
 }
 
 .intro{
@@ -180,7 +248,7 @@ nav{
     margin: 100px 0px;
 
     h2{
-        margin-bottom: 80px;
+        margin-bottom: 100px;
     }
 }
 .present-title{
@@ -281,4 +349,11 @@ footer{
     font-size: 12px;
     font-family:  'Noto Serif TC', serif;
     font-weight: 300;
+}
+.pagetop {
+    a{
+        color:$primary;
+        font-family:  'Noto Serif TC', serif;
+        font-weight: 300;
+    }
 }
