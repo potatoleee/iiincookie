@@ -282,11 +282,10 @@ nav{
     }
 .cookie-viewMore{
     padding: 32px 0px;
+    text-align: right;
     .viewMore{
-        display: block;
         position: relative;
         padding-right: 48px;
-        text-align: right;
         color:$primary;
     
         &::before{
@@ -323,10 +322,20 @@ nav{
 }
 
 @media(max-width:768px){
+    .cookie{
+        .cookie-title{
+            font-size: 24px;
+            text-align: center;
+        }
+        .cookie-viewMore{
+            padding-top: 16px;
+            padding-bottom: 24px;
+        }
+    }
     .cookie-item{
     li{
         width: calc( (100% - 24px) / 2);
-        margin-bottom: 8px;
+        margin-bottom: 16px;
         position: relative;
     }
     }
@@ -370,7 +379,6 @@ nav{
             
         a{
             position: relative;
-            font-size: 12px;
            
             &::before{
                 position: absolute;
@@ -385,6 +393,36 @@ nav{
         }
         }
     }
+}
+
+@media(max-width:768px)
+{
+    .present{
+        margin-top:80px;
+        margin-bottom: 0px;
+
+        .present-title{
+            font-size: 24px;
+        }
+
+    }
+    .present-list{
+        flex-direction: column;
+        .present-item{
+            width: 100%;
+            margin-bottom: 100px;
+
+            p{
+                text-align: right;
+                margin-top: 16px;
+            }
+            .present-more{
+                text-align: right;
+                padding-right: 50px;
+            }
+        }
+    }
+
 }
 
 footer{
@@ -445,3 +483,4 @@ footer{
         font-weight: 300;
     }
 }
+
