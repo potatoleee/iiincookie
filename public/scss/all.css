@@ -670,7 +670,7 @@ nav .nav-content .nav-content_main {
 .present-list .present-item .present-more a::before {
   position: absolute;
   content: "";
-  height: 2px;
+  height: 1px;
   width: 40px;
   background-color: #161A14;
   top: 50%;

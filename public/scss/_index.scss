@@ -47,6 +47,7 @@ nav{
     transition: all .5s;
     
   }
+//   絕對定位調整置中
   .btn-buger.open::before,
   .btn-buger.open::after {
     top: 50%;
@@ -461,7 +462,7 @@ nav{
             &::before{
                 position: absolute;
                 content: "";
-                height: 2px;
+                height: 1px;
                 width: 40px;
                 background-color: $black-100;
                 top:50%;
