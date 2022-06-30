@@ -21,14 +21,16 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-
-
+.icon-buger{
+    display: none;
+}
     .nav-content{
         width: 389px;
         justify-content: space-between;
         display: flex;
         a{
-            padding: 24px 0px;
+            margin: 20px 0px;
+            padding: 4px 0px;
             color:$black-100;
             transition: all .5s;
             position: relative;
@@ -68,13 +70,18 @@ nav{
 @media(max-width:992px){
     
         .logo{
+          
             img{
                 width: 127.41px;
              }
         }
         nav{
+            .icon-buger{
+                display: block;
+            }
         .nav-content{
             justify-content: flex-end;
+            
             .nav-content_main{
             display: none;
             }
