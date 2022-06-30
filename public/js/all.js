@@ -9,7 +9,7 @@ $(document).ready(function(){
 
     $('.btn-buger').click(function(e){
         $('.nav-content_main').toggleClass('open');
-        $('.btn-buger').addClass('open');
+        $('.btn-buger').toggleClass('open');
     })
 
 
