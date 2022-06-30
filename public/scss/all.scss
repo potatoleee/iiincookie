@@ -303,8 +303,9 @@ nav{
 }
 }
 .cookie-item{
- 
+    display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     li{
         width: calc( (100% - 72px) / 4);
         position: relative;
@@ -318,6 +319,15 @@ nav{
         background-color: $black-50;
         color:$primary;
         
+    }
+}
+
+@media(max-width:768px){
+    .cookie-item{
+    li{
+        width: calc( (100% - 24px) / 2);
+        position: relative;
+    }
     }
 }
 
