@@ -507,6 +507,7 @@ nav .nav-content .nav-content_main {
 @media (max-width: 768px) {
   .cookie-item li {
     width: calc( (100% - 24px) / 2);
+    margin-bottom: 8px;
     position: relative;
   }
 }
