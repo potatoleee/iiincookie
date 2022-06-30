@@ -59,7 +59,7 @@ nav{
     transform: rotate(-45deg);
   }
   // 漢堡end
-  
+
     .nav-content{
         width: 389px;
         justify-content: space-between;
@@ -348,6 +348,14 @@ nav{
         position: relative;
         padding-right: 48px;
         color:$primary;
+        transition: all .5s;
+        &:hover{
+            color:$hover-color;
+            &::before{
+                background-color: $hover-color;
+
+            }
+        }
     
         &::before{
             position: absolute;
@@ -357,7 +365,9 @@ nav{
             background-color: $primary;
             top:calc(50% + 0.1rem);
             right:1px;
+            transition: all .5s;
 
+           
         }
     }
 }
@@ -440,15 +450,23 @@ nav{
             
         a{
             position: relative;
+            transition: all .5s;
+            &:hover{
+                color:$black-50;
+                &::before{
+                    background-color:$black-50;
+                }
+            }
            
             &::before{
                 position: absolute;
                 content: "";
-                height: 1px;
+                height: 2px;
                 width: 40px;
                 background-color: $black-100;
-                top:calc(50% + 0.1rem);
+                top:50%;
                 right: -48px;
+                transition: all .5s;
 
             }
         }
@@ -504,16 +522,31 @@ footer{
     .pagetop{
         position: relative;
         padding-right: 9px;
-        
-        &::before{
-            position: absolute;
-            content: "";
-            height: 80px;
-            width: 1px;
-            top:-10px;
-            right: 0px;
-            background-color:$primary;
+        a{
+            color:$primary;
+            font-family:  'Noto Serif TC', serif;
+            font-weight: 300;
+            transition: all .5s;
+            &:hover{
+                color:$hover-color;
+
+                &::before{
+                    background-color: $hover-color;
+                }
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                height: 80px;
+                width: 1px;
+                top:-10px;
+                right: 0px;
+                background-color:$primary;
+                transition: all .5s;
+            }
         }
+
+      
     }
 }
 .instagram{
@@ -537,10 +570,4 @@ footer{
     font-family:  'Noto Serif TC', serif;
     font-weight: 300;
 }
-.pagetop {
-    a{
-        color:$primary;
-        font-family:  'Noto Serif TC', serif;
-        font-weight: 300;
-    }
-}
+

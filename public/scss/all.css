@@ -540,6 +540,16 @@ nav .nav-content .nav-content_main {
   position: relative;
   padding-right: 48px;
   color: #F0F0F0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.cookie .cookie-viewMore .viewMore:hover {
+  color: rgba(240, 240, 240, 0.5);
+}
+
+.cookie .cookie-viewMore .viewMore:hover::before {
+  background-color: rgba(240, 240, 240, 0.5);
 }
 
 .cookie .cookie-viewMore .viewMore::before {
@@ -550,6 +560,8 @@ nav .nav-content .nav-content_main {
   background-color: #F0F0F0;
   top: calc(50% + 0.1rem);
   right: 1px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .cookie-item {
@@ -643,16 +655,28 @@ nav .nav-content .nav-content_main {
 
 .present-list .present-item .present-more a {
   position: relative;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.present-list .present-item .present-more a:hover {
+  color: rgba(22, 26, 20, 0.5);
+}
+
+.present-list .present-item .present-more a:hover::before {
+  background-color: rgba(22, 26, 20, 0.5);
 }
 
 .present-list .present-item .present-more a::before {
   position: absolute;
   content: "";
-  height: 1px;
+  height: 2px;
   width: 40px;
   background-color: #161A14;
-  top: calc(50% + 0.1rem);
+  top: 50%;
   right: -48px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 @media (max-width: 768px) {
@@ -710,7 +734,23 @@ footer {
   padding-right: 9px;
 }
 
-.footer-content .pagetop::before {
+.footer-content .pagetop a {
+  color: #F0F0F0;
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 300;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.footer-content .pagetop a:hover {
+  color: rgba(240, 240, 240, 0.5);
+}
+
+.footer-content .pagetop a:hover::before {
+  background-color: rgba(240, 240, 240, 0.5);
+}
+
+.footer-content .pagetop a::before {
   position: absolute;
   content: "";
   height: 80px;
@@ -718,6 +758,8 @@ footer {
   top: -10px;
   right: 0px;
   background-color: #F0F0F0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .instagram {
@@ -742,12 +784,6 @@ footer {
 
 .copyright {
   font-size: 12px;
-  font-family: 'Noto Serif TC', serif;
-  font-weight: 300;
-}
-
-.pagetop a {
-  color: #F0F0F0;
   font-family: 'Noto Serif TC', serif;
   font-weight: 300;
 }
