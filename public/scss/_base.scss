@@ -1,4 +1,13 @@
 
+
+
+.container-xl{
+    max-width: 1352px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
 .container{
    
     max-width: 1172px;
@@ -7,12 +16,9 @@
     padding-right: 16px;
 }
 
-.container-xl{
-    max-width: 1352px;
-    margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
-
+.container-md{
+    max-width: 752px;
+    padding: 0px 16px;
 }
 
 body{
@@ -27,7 +33,7 @@ body{
 
 a{
     text-decoration: none;
-    display: block;
+    
     color:$black-100;
    
 }     
