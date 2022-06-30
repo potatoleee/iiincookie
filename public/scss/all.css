@@ -171,7 +171,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 2;
 }
 
 nav .topnav {
@@ -186,8 +186,53 @@ nav .topnav {
           align-items: center;
 }
 
-nav .icon-buger {
+nav .btn-buger {
   display: none;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+nav .btn-buger::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #161A14;
+  top: 8px;
+  right: 2px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+nav .btn-buger::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #161A14;
+  bottom: 8px;
+  right: 2px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+nav .btn-buger.open::before,
+nav .btn-buger.open::after {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+nav .btn-buger.open::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+nav .btn-buger.open::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 nav .nav-content {
@@ -246,11 +291,15 @@ nav .nav-content .nav-content_main {
 }
 
 @media (max-width: 992px) {
+  .logo {
+    z-index: 4;
+  }
   .logo img {
     width: 127.41px;
   }
-  nav .icon-buger {
+  nav .btn-buger {
     display: block;
+    z-index: 4;
   }
   nav .logo {
     position: absolute;
@@ -265,7 +314,33 @@ nav .nav-content .nav-content_main {
             justify-content: flex-end;
   }
   nav .nav-content .nav-content_main {
-    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 0px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #F0F0F0;
+    z-index: 3;
+  }
+  nav .nav-content .nav-content_main .icon-account {
+    margin: 0 auto;
+  }
+  nav .nav-content .nav-content_cart {
+    z-index: 4;
+  }
+  nav .nav-content .nav-content_main.open {
+    height: 100vh;
   }
 }
 
