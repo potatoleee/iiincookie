@@ -92,6 +92,19 @@ p{
     display: flex;
 }
 
+.btn-primary{
+    display: block;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: $secondary;
+    color:$primary;
+    border-radius: 4px;
+    transition: all .5s;
+    &:hover{
+        background-color: $btn-hover;
+    }
+}
+
 // .col-4{
 //     width: calc(100% / 3 - 24px);
 //     margin: 0 12px;

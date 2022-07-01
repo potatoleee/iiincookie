@@ -17,13 +17,17 @@
 
 .product-list{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     
     .product-item{
         width: calc( (100% - 145px) / 3 );
+        margin-right: 72.5px;
         text-align: center;
         padding-bottom: 48px;
+
+        &:nth-child(3n){
+            margin-right: 0;
+        }
         
         img{
             border-radius: 4px;
@@ -66,8 +70,11 @@
     .product-list{
         .product-item{
             width: calc( (100% - 16px) / 2 );
-            padding: 0 2vw;
+            margin-right:16px;
             padding-bottom: 32px;
+            &:nth-child(2n){
+                margin-right: 0;
+            }
 
             .btn-primary{
                 font-size: 12px;
