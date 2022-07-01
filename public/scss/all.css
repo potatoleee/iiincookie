@@ -818,7 +818,7 @@ footer {
 .product-list .product-item {
   width: calc( (100% - 145px) / 3);
   text-align: center;
-  margin-bottom: 48px;
+  padding-bottom: 48px;
 }
 
 .product-list .product-item img {
@@ -828,7 +828,7 @@ footer {
 
 .product-list .product-item h5 {
   margin-top: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   letter-spacing: 3px;
 }
 
@@ -851,5 +851,22 @@ footer {
 
 .product-list .product-item .btn-primary:hover {
   background-color: #5C685A;
+}
+
+@media (max-width: 768px) {
+  .product-container {
+    max-width: 628px;
+    margin: 0 auto;
+    padding: 0px 4vw;
+  }
+  .product-list .product-item {
+    width: calc( (100% - 16px) / 2);
+    padding: 0 2vw;
+    padding-bottom: 32px;
+  }
+  .product-list .product-item .btn-primary {
+    font-size: 12px;
+    padding: 8px 0px;
+  }
 }
 /*# sourceMappingURL=all.css.map */
