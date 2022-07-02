@@ -893,6 +893,9 @@ footer {
   .product-list .product-item:nth-child(3n) {
     margin-right: 16px;
   }
+  .product-list .product-item:nth-child(6n) {
+    margin-right: 0px;
+  }
   .product-list .product-item .btn-primary {
     font-size: 12px;
     padding: 8px 0px;
