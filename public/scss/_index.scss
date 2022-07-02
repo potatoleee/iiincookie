@@ -151,6 +151,10 @@ nav{
               background-color:$primary;
               z-index: 3;
 
+              .nav-about{
+                margin-top: 100px;
+              }
+
               .icon-account{
                 margin: 0 auto;
               }
@@ -163,10 +167,16 @@ nav{
             .nav-content_main.open{
                 height: 100vh;
               }
-            
+
+        
         }
     }
-
+    //這樣子為何選不到第一個？
+    // .nav-content_main{
+    // &:nth-child(1){
+    //     margin-top: 100px;
+    //   }
+    // } 
     
 
 }  
