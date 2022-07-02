@@ -12,10 +12,14 @@
     font-size: 12px;
     margin-bottom: 24px;
     color:$black-70;
+    margin: 0 auto;
+    width: 485px;
 }
 input[type="text"]{
     display: block;
-    width: 100%;
+    // width: 100%;
+    width: 485px;
+    margin: 0 auto;
     padding: 10px 16px;
     border: 1px solid $black-30;
     margin-bottom: 16px;
@@ -28,11 +32,12 @@ input[name="password-login"]{
    margin-bottom:16px;
 }
 .login{
-    width: 42.54386%;
+    // width: 42.54386%;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 40px;
     .btn-primary{
-        width: 45%;
+        width: 218px;
         margin: 0 auto;
         margin-bottom: 16px;
     }
@@ -58,15 +63,21 @@ input[name="password-login"]{
     
 }
 
-@media(max-width:992px){
+@media(max-width:767px){
     form{
         width: 90%;
+    }
+    input[type="text"]{
+        width: 100%;
+    }
+    .forget{
+        width: 100%;
     }
     .line{
         width: 100%;
     }
     .login{
-        width: 100%;
+        width: 90%;
         .btn-primary{
             width: 100%;
         }
