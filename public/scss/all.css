@@ -163,6 +163,8 @@ p {
   border-radius: 4px;
   -webkit-transition: all .5s;
   transition: all .5s;
+  border: none;
+  font-size: 16px;
 }
 
 .btn-primary:hover {
@@ -1030,12 +1032,6 @@ footer {
   padding-bottom: 32px;
 }
 
-form {
-  width: 42.54386%;
-  margin: 0 auto;
-  margin-bottom: 40px;
-}
-
 .forget {
   font-size: 12px;
   margin-bottom: 24px;
@@ -1056,6 +1052,12 @@ input[type="text"] {
 
 input[name="password-login"] {
   margin-bottom: 16px;
+}
+
+.login {
+  width: 42.54386%;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .login .btn-primary {
@@ -1093,6 +1095,9 @@ input[name="password-login"] {
   .line {
     width: 100%;
   }
+  .login {
+    width: 100%;
+  }
   .login .btn-primary {
     width: 100%;
   }
@@ -1127,5 +1132,10 @@ input[name="password-login"] {
   left: 5.1%;
   letter-spacing: 15px;
   color: #F0F0F0;
+}
+
+.custom-content .custom-text {
+  margin-top: 40px;
+  margin-bottom: 36px;
 }
 /*# sourceMappingURL=all.css.map */

@@ -7,11 +7,7 @@
         padding-bottom: 32px;
     }
 }
-form{
-    width: 42.54386%;
-    margin: 0 auto;
-    margin-bottom: 40px;
-}
+
 .forget{
     font-size: 12px;
     margin-bottom: 24px;
@@ -32,6 +28,9 @@ input[name="password-login"]{
    margin-bottom:16px;
 }
 .login{
+    width: 42.54386%;
+    margin: 0 auto;
+    margin-bottom: 40px;
     .btn-primary{
         width: 45%;
         margin: 0 auto;
@@ -67,6 +66,7 @@ input[name="password-login"]{
         width: 100%;
     }
     .login{
+        width: 100%;
         .btn-primary{
             width: 100%;
         }
