@@ -1098,9 +1098,34 @@ input[name="password-login"] {
   }
 }
 
+.custom-container {
+  max-width: 784px;
+  padding: 0px 16px;
+  margin: 0 auto;
+}
+
 .custom-bg {
   background-color: #C0B3A2;
   background-size: 100%;
-  padding-bottom: 51.714286%;
+}
+
+.custom-bg .custom-pic {
+  position: relative;
+}
+
+.custom-bg .custom-pic img {
+  margin: 0 auto;
+  padding: 14.245014% 0px;
+}
+
+.custom-bg .custom-pic .custom-title {
+  position: absolute;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  top: 5.128205%;
+  left: 5.1%;
+  letter-spacing: 15px;
+  color: #F0F0F0;
 }
 /*# sourceMappingURL=all.css.map */

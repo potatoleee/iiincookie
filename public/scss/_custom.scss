@@ -1,5 +1,28 @@
+.custom-container{
+    max-width: 784px;
+    padding: 0px 16px;
+    margin: 0 auto;
+}
 .custom-bg{
     background-color: $custom-bg;
     background-size: 100%;
-    padding-bottom: 51.714286%;
-}
+ 
+    .custom-pic{
+        position: relative;
+        img{
+            // width: 65.964612%;
+            margin: 0 auto;
+            padding: 14.245014% 0px;
+         
+        }
+        .custom-title{
+            position: absolute;
+            writing-mode: vertical-lr;
+            top:5.128205%;
+            left: 5.1%;
+            letter-spacing: 15px;
+            color: $primary;
+        }
+    }
+    }
+
