@@ -1,5 +1,6 @@
 main{
-    min-height: calc(100vh - 200px);
+    min-height: calc(100vh - 128px);
+    // footer高度128px 因為nav有fixed所以少扣72px，不然本來也要扣
 }
 header{
     background-color: $primary;
