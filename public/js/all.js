@@ -20,4 +20,21 @@ $('.sub-product img').click(function(e){
 $('.main-product ').attr('src',$(this).attr('src'));
 })
 
+
+//faq
+
+$('.faq-title').click(function(e){
+    $(this).find('.btn-faq').toggleClass('open');
+    $(this).siblings('.faq-title_p').slideToggle();
+    $(this).toggleClass('text-title_color');
+    $(this).parent().siblings().find('.faq-title_p').slideUp();
+    $(this).parent().siblings().find('.faq-title').removeClass('text-title_color');
+    $(this).parent().siblings().find('.btn-faq').removeClass('open');
+
+
 })
+
+})//end
+
+
+
