@@ -12,6 +12,7 @@
         left: 12.45614%;
         margin-top: 15%;
         z-index: 3;
+        border-radius: 4px;
         h2{
             padding-top: 32px;
             padding-bottom: 50px;
@@ -38,6 +39,7 @@
         margin-left: 42.543859649%;
         // z-index: 2;
         margin-top: 8%;
+        border-radius: 4px;
       
         
     }
@@ -52,11 +54,14 @@
             max-width: 100%;
             position: static;
             margin-top: 0;
+            padding-bottom: 40px;
+            border-radius: 0px 0px 12px 12px;
         }
         img{
             width: 100%;
             margin-top: 0;
             margin-left: 0;
+            border-radius: 12px 12px 0px 0px;
         }
     }
 }

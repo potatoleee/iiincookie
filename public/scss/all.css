@@ -1319,6 +1319,7 @@ input[name="password-login"] {
   left: 12.45614%;
   margin-top: 15%;
   z-index: 3;
+  border-radius: 4px;
 }
 
 .about-main .about-text h2 {
@@ -1345,6 +1346,7 @@ input[name="password-login"] {
   width: 40.438596%;
   margin-left: 42.543859649%;
   margin-top: 8%;
+  border-radius: 4px;
 }
 
 @media (max-width: 992px) {
@@ -1359,11 +1361,14 @@ input[name="password-login"] {
     max-width: 100%;
     position: static;
     margin-top: 0;
+    padding-bottom: 40px;
+    border-radius: 0px 0px 12px 12px;
   }
   .about-main img {
     width: 100%;
     margin-top: 0;
     margin-left: 0;
+    border-radius: 12px 12px 0px 0px;
   }
 }
 /*# sourceMappingURL=all.css.map */
