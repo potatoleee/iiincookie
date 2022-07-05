@@ -1417,4 +1417,8 @@ input[name="password-login"] {
   padding: 24px;
   margin-left: 24px;
 }
+
+input[type="radio"] {
+  display: inline;
+}
 /*# sourceMappingURL=all.css.map */
