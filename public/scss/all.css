@@ -520,33 +520,26 @@ nav .nav-content .nav-content_main {
 
 @media (max-width: 767px) {
   .intro {
-    margin: 80px 0px;
+    margin: 64px 0px;
   }
-  .intro .orign {
+  .intro .orign, .intro .package {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .intro .orign img {
+  .intro .orign img, .intro .package img {
     width: 100%;
   }
-  .intro .orign .orign-text {
+  .intro .orign .orign-text, .intro .package .orign-text {
     width: 100%;
     margin-left: 0px;
-  }
-  .intro .package {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .intro .package img {
-    width: 100%;
+    margin-bottom: 24px;
   }
   .intro .package .package-text {
     width: 100%;
     margin-right: 0px;
+    margin-bottom: 24px;
   }
 }
 
