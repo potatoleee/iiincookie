@@ -15,14 +15,9 @@
     margin: 0 auto;
     width: 485px;
 }
-input{
-    display: block;
-    // width: 100%;
-    width: 485px;
-    margin: 0 auto;
+.input-primary{
     padding: 9px 16px;
     border: 1px solid $black-30;
-    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.5;
     border-radius: 4px;
@@ -31,8 +26,13 @@ input{
 input[name="password-login"]{
    margin-bottom:16px;
 }
+.input-login{
+    width: 485px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
 .login{
-    // width: 42.54386%;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 40px;
@@ -67,7 +67,7 @@ input[name="password-login"]{
     form{
         width: 90%;
     }
-    input[type="text"]{
+     .input-login{
         width: 100%;
     }
     .forget{

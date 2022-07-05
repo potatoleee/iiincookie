@@ -41,7 +41,7 @@ if( $(window).width() >= 768){
         offsetTop = $(window).scrollTop()
         // console.log(offsetTop/10)
         //x:“偏移”,“時間：數字越大呈現時間越久"
-        gsap.to(".about-text", { y:-offsetTop/2, duration: 1})
+        gsap.to(".about-text", { x:offsetTop/2, duration: 1})
         
     })
 }else{
@@ -49,7 +49,7 @@ if( $(window).width() >= 768){
         offsetTop = $(window).scrollTop()
         // console.log(offsetTop/10)
         //x:“偏移”,“時間：數字越大呈現時間越久"
-        gsap.to(".about-text", { x:-offsetTop/2, duration: 1})
+        gsap.to(".about-text", { y:-offsetTop/5, duration: 1})
         
     })
 }
