@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
 // scoll top
     $('.pagetop').click(function(){
@@ -33,8 +35,41 @@ $('.faq-title').click(function(e){
 
 
 })
+// 這判斷還不沒完成
+if( $(window).width() >= 768){
+    $(window).scroll(function(){
+        offsetTop = $(window).scrollTop()
+        // console.log(offsetTop/10)
+        //x:“偏移”,“時間：數字越大呈現時間越久"
+        gsap.to(".about-text", { y:-offsetTop/2, duration: 1})
+        
+    })
+}else{
+    $(window).scroll(function(){
+        offsetTop = $(window).scrollTop()
+        // console.log(offsetTop/10)
+        //x:“偏移”,“時間：數字越大呈現時間越久"
+        gsap.to(".about-text", { x:-offsetTop/2, duration: 1})
+        
+    })
+}
+
+
+
+
+// 捲軸事件物體會移動
+// $(window).scroll(function(){
+//     offsetTop = $(window).scrollTop()
+//     // console.log(offsetTop/10)
+//     //x:“偏移”,“時間：數字越大呈現時間越久"
+//     gsap.to(".about-text", { y:-offsetTop/2, duration: 1})
+    
+// })
 
 })//end
+new WOW().init();
+
+
 
 
 

@@ -7,11 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@300;400;500&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/147f962b26.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="public/js/WOW-master/css/libs/animate.css">
     <link rel="stylesheet" href="public/scss/all.css">
     <!-- icon -->
-
+    <script src="https://kit.fontawesome.com/147f962b26.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="public/js/WOW-master/css/libs/animate.css">
     <title>餅乾生產餡-iiincookie</title>
      
 </head>
@@ -40,7 +39,49 @@
         <!-- header end -->
         <!-- main  start讓我的內容要撐開使footer置底  -->
       <main>
+        <div class="wrap container">
+        <h2 class="order-title">結帳吃餅乾</h2>
+      <div class="shopping-main">
+        <form class="order">
+          <h5>訂單資訊</h5>
+          <label for="name">姓名*</label>
+          <input type="text" name="name" id="order">
 
+          <label for="phone">聯絡電話*</label>
+          <input type="phone" name="phone" id="order">
+
+          <label for="email">電子郵件*</label>
+          <input type="email" name="name" id="order">
+
+          <label for="address">寄送地址*</label>
+          <input type="text" name="address" id="order">
+          <div>
+            <p>運送方式</p>
+            <label for="selfPick">自行取貨</label>
+            <input type="radio" name="selfPick" id="selfPick">
+            <label for="honeDelivery">宅配</label>
+            <input type="radio" name="honeDelivery" id="honeDelivery" checked>
+           </div>
+          <div>
+            <p></p>
+              <label for="pay">運送方式</label>
+              <input type="radio" name="credit" id="pay">
+              <input type="radio" name="atm" id="pay">
+           </div>
+
+          <p>下一步將連至第三方金流服務進行刷卡，你所有的交易資訊皆獲得安全保護。</p>
+
+          <input type="submit" value="付款" class="btn-primary">
+
+        </form>
+        <form class="cart">
+          <p>還有想購買的物品嗎？</p>
+          <h5>購物車</h5>
+        
+        </form>
+
+      </div>
+     </div>
       </main>
  
  <!-- main end 讓我的內容要撐開使footer置底 -->
