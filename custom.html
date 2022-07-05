@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@300;400;500&display=swap" rel="stylesheet">  
+    <!-- wowjs -->
+    <link rel="stylesheet" href="public/js/WOW-master/css/libs/animate.css">
+    <!-- main css -->
     <link rel="stylesheet" href="public/scss/all.css">
-    <!-- icon -->
-    <script src="https://kit.fontawesome.com/147f962b26.js" crossorigin="anonymous"></script>
+
+   
     <title>餅乾生產餡-iiincookie</title>
      
 </head>
@@ -40,7 +43,7 @@
       <main>
 
         <div class="wrap">
-            <div class="custom-bg">
+            <div class="custom-bg wow fadeIn">
                     <div class="custom-pic custom-container">
                         <h3 class="custom-title">鐵盒訂制</h3>
                         <img src="public/images/boxflower.JPG" alt="">
@@ -54,11 +57,11 @@
                 <div class="custom-content_form">
                     <form class="custom-form">
                         <label for="custom">目的</label>
-                        <input type="text" name="purposre" placeholder="收涎/喜餅">
+                        <input class="input-primary" type="text" name="purposre" placeholder="收涎/喜餅">
                     </form>
                     <form class="custom-form">
                         <label for="custom">數量</label>
-                        <input type="text" name="amount" placeholder="15盒">
+                        <input class="input-primary"type="text" name="amount" placeholder="15盒">
                     </form>
                     <button type="submit " class="btn-primary btn-custom">提交</button>
                  </div>
@@ -86,6 +89,8 @@
           <!-- footer start -->
 <!-- jquery -->
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+       <!-- wowjs -->
+       <script src="public/js/WOW-master/dist/wow.min.js"></script>
 <!--  main jquery -->
       <script src=".//public/js/all.js"></script>
     
