@@ -402,18 +402,34 @@ nav{
     li{
         width: calc( (100% - 72px) / 4);
         position: relative;
-    }
-    p{
-        position: absolute;
-        width: 100%;
-        bottom: 0px;
-        text-align: center;
-        padding: 6px ;
-        background-color: $black-50;
-        color:$primary;
+
+       
+       
+        p{
+            position: absolute;
+            width: 100%;
+            height: 36px;
+            bottom: 0px;
+            text-align: center;
+            padding: 6px ;
+            background-color: $black-50;
+            color:$primary;
+            transition: all 1s;
+            
+        }
+        &:hover{
+           
+            p{
+                padding:75% 0px;
+                height: 100%;
+            }
+        }
+
         
     }
+   
 }
+
 
 @media(max-width:767px){
     .cookie{
@@ -446,6 +462,8 @@ nav{
     text-align: center;
     
 }
+
+
 .present-list{
     display: flex;
     justify-content: space-between;
@@ -453,6 +471,18 @@ nav{
     .present-item{
         width: calc( (100% - 72px) / 3);
         position: relative;
+        // overflow: hidden;
+        // img{
+        //     transition: all .5s;
+        // }
+        
+        // &:hover{
+        //     img{
+        //         transform: scale(1.2);
+        //     }
+        // }
+       
+
 
         .present-item_title{
             writing-mode: vertical-lr;

@@ -608,14 +608,22 @@ nav .nav-content .nav-content_main {
   position: relative;
 }
 
-.cookie-item p {
+.cookie-item li p {
   position: absolute;
   width: 100%;
+  height: 36px;
   bottom: 0px;
   text-align: center;
   padding: 6px;
   background-color: rgba(22, 26, 20, 0.5);
   color: #F0F0F0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cookie-item li:hover p {
+  padding: 75% 0px;
+  height: 100%;
 }
 
 @media (max-width: 767px) {
