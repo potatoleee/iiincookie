@@ -3,10 +3,7 @@
 $(document).ready(function(){
 // scoll top
     $('.pagetop').click(function(){
-        $('html,body').animate({
-         scrollTop:0
-        },
-         1000);
+        $('html,body').animate({scrollTop:0 },1000);
  });// scoll end
 
 //  漢堡選單 start
@@ -35,13 +32,23 @@ $('.faq-title').click(function(e){
 
 
 })
+
+//每一次縮放視窗的時候執行
+let windowWidth = $(window).width()
+
+$(window).resize(function(){
+    gsapAnimate()
+    windowWidth = $(window).width()
+})
 // 這判斷還不沒完成
+
+function gsapAnimate(){
 if( $(window).width() >= 768){
     $(window).scroll(function(){
         offsetTop = $(window).scrollTop()
         // console.log(offsetTop/10)
         //x:“偏移”,“時間：數字越大呈現時間越久"
-        gsap.to(".about-text", { x:offsetTop/2, duration: 1})
+        gsap.to(".about-text", { x:offsetTop/3, duration: 1})
         
     })
 }else{
@@ -52,6 +59,7 @@ if( $(window).width() >= 768){
         gsap.to(".about-text", { y:-offsetTop/6, duration: 1})
         
     })
+}
 }
 
 
