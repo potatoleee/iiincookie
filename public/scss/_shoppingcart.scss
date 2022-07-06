@@ -135,6 +135,9 @@
 }
 
 @media(max-width:767px){
+    .order-title{
+        font-size: 24px;
+    }
     .shopping-main{
         flex-direction: column-reverse;
         form{

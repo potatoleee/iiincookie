@@ -1,3 +1,37 @@
+//讀取動畫start
+.loading-overlay{
+    position: fixed;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: $primary;
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
+.loading-overlay.active{
+    top: -100vh;
+    transition: all 1s 1s ;
+  
+}
+.loading-logo{
+    animation: loading 3s linear infinite;
+}
+
+@keyframes loading{
+    0%{
+        opacity: 0;
+      
+    }
+   
+    100%{
+        opacity:1;
+       
+    }
+}
+//讀取動畫end
+
 main{
     min-height: calc(100vh - 128px);
     // footer高度128px 因為nav有fixed所以少扣72px，不然本來也要扣
@@ -7,7 +41,7 @@ header{
     position: fixed;
     top:0;
     width: 100%;
-    z-index: 99;
+    z-index:99;
     
 }
 nav{

@@ -1,6 +1,14 @@
 
 
+
+// loading 動畫
+$(window).on('load',function(){
+    $('.loading-overlay').addClass('active')
+})
+
 $(document).ready(function(){
+
+
 // scoll top
     $('.pagetop').click(function(){
         $('html,body').animate({scrollTop:0 },1000);
