@@ -1,10 +1,11 @@
 
 
 
-// loading 動畫
+// loading 動畫start
 $(window).on('load',function(){
     $('.loading-overlay').addClass('active')
 })
+// loading 動畫end
 
 $(document).ready(function(){
 
@@ -23,32 +24,32 @@ $(document).ready(function(){
 
 //點小圖換大圖 start
 $('.sub-product img').click(function(e){
-
 $('.main-product ').attr('src',$(this).attr('src'));
+$(this).addClass('active');
+$(this).parent().siblings().find('img').removeClass('active');
 })
 
 
 //faq
 
-$('.faq-title').click(function(e){
+$('.faq-list_title').click(function(e){
     $(this).find('.btn-faq').toggleClass('open');
-    $(this).siblings('.faq-title_p').slideToggle();
+    $(this).siblings('.faq-list_p').slideToggle();
     $(this).toggleClass('text-title_color');
-    $(this).parent().siblings().find('.faq-title_p').slideUp();
-    $(this).parent().siblings().find('.faq-title').removeClass('text-title_color');
+    $(this).parent().siblings().find('.faq-list_p').slideUp();
+    $(this).parent().siblings().find('.faq-list_title').removeClass('text-title_color');
     $(this).parent().siblings().find('.btn-faq').removeClass('open');
 
 
 })
 
 //每一次縮放視窗的時候執行
-let windowWidth = $(window).width()
+
 
 $(window).resize(function(){
     gsapAnimate()
-    windowWidth = $(window).width()
+
 })
-// 這判斷還不沒完成
 
 function gsapAnimate(){
 if( $(window).width() >= 768){
@@ -70,19 +71,11 @@ if( $(window).width() >= 768){
 }
 }
 
+gsapAnimate()
 
 
 
-// 捲軸事件物體會移動
-// $(window).scroll(function(){
-//     offsetTop = $(window).scrollTop()
-//     // console.log(offsetTop/10)
-//     //x:“偏移”,“時間：數字越大呈現時間越久"
-//     gsap.to(".about-text", { y:-offsetTop/2, duration: 1})
-    
-// })
-
-})//end
+})// document end
 new WOW().init();
 
 

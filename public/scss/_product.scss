@@ -24,6 +24,8 @@
         margin-right: 72.5px;
         text-align: center;
         padding-bottom: 48px;
+        overflow: hidden;
+      
 
         &:nth-child(3n){
             margin-right: 0;
@@ -32,6 +34,10 @@
         img{
             border-radius: 4px;
             cursor: pointer;
+            &:hover{
+                transform: scale(1.2);
+                transition: all .5s;
+            }
         }
         h5{
             margin-top: 16px;

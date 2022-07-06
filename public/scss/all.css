@@ -166,6 +166,7 @@ p {
   transition: all .5s;
   border: none;
   font-size: 16px;
+  line-height: 1.5;
 }
 
 .btn-primary:hover {
@@ -893,6 +894,7 @@ footer {
   margin-right: 72.5px;
   text-align: center;
   padding-bottom: 48px;
+  overflow: hidden;
 }
 
 .product-list .product-item:nth-child(3n) {
@@ -902,6 +904,13 @@ footer {
 .product-list .product-item img {
   border-radius: 4px;
   cursor: pointer;
+}
+
+.product-list .product-item img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .product-list .product-item h5 {
@@ -1009,10 +1018,20 @@ footer {
 .sub-product li {
   width: calc((100% - (24px * 4)) / 5);
   margin-right: 24px;
+  margin-bottom: 16px;
 }
 
 .sub-product li:nth-child(5n) {
   margin-right: 0;
+}
+
+.sub-product li img {
+  margin-bottom: 0px;
+  border: 2px solid #F0F0F0;
+}
+
+.sub-product > li > img.active {
+  border: 2px solid #738673;
 }
 
 .product-info {
@@ -1085,7 +1104,11 @@ footer {
   margin-top: 72px;
 }
 
-.loginpage .welcome {
+.loginpage {
+  margin-bottom: 72px;
+}
+
+.loginpage .login-title {
   text-align: center;
   padding-bottom: 32px;
 }
@@ -1153,6 +1176,9 @@ input[name="password-login"] {
 }
 
 @media (max-width: 767px) {
+  .login-title {
+    font-size: 24px;
+  }
   form {
     width: 90%;
   }
@@ -1286,7 +1312,7 @@ input[name="password-login"] {
   border-radius: 4px;
 }
 
-.faq-title {
+.faq-list_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1296,7 +1322,7 @@ input[name="password-login"] {
   font-size: 18px;
 }
 
-.faq-title_p {
+.faq-list_p {
   padding-top: 24px;
   display: none;
   color: rgba(22, 26, 20, 0.7);
@@ -1351,8 +1377,11 @@ input[name="password-login"] {
 }
 
 @media (max-width: 767px) {
-  .faq-title {
+  .faq-list_title {
     font-size: 16px;
+  }
+  .faq-title {
+    font-size: 24px;
   }
 }
 
@@ -1368,16 +1397,14 @@ input[name="password-login"] {
   max-width: 404px;
   background-color: #C0B3A2;
   position: absolute;
-  padding: 0px 40px;
-  padding-bottom: 80px;
+  padding: 64px 40px;
   left: 12.45614%;
-  margin-top: 20%;
+  margin-top: 15%;
   z-index: 3;
   border-radius: 4px;
 }
 
 .about-main .about-text h2 {
-  padding-top: 32px;
   padding-bottom: 50px;
   position: relative;
 }

@@ -40,15 +40,21 @@
     flex-wrap: wrap;
 
     li{
-        
         width: calc((100% - (24px * 4)) / 5 );
         margin-right:24px;
+        margin-bottom: 16px;
        
         &:nth-child(5n){
             margin-right: 0;
         }
-    }
-    
+        img{
+            margin-bottom: 0px;
+            border:2px solid $primary;
+        }
+    } 
+}
+.sub-product>li>img.active{
+    border: 2px solid $secondary;
 }
 .product-info{
     width: 38.4%;
