@@ -15,7 +15,7 @@
 }
 .order{
     input{
-        &:nth-last-child(1){
+        &:nth-last-child(4){
             margin-bottom: 24px;
         }
     }
@@ -24,12 +24,17 @@
     width: 100%;
     display: block;
     margin-bottom: 16px;
+
 }
 .label-order{
     display: block;
     margin-bottom: 4px;
     font-size: 12px;
-     color: $black-50;
+    color: $black-50;
+
+    span{
+        color:#D71818;
+    }
 }
 .order{
     width: 58.985201%;
