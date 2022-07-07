@@ -1,222 +1,3 @@
-//讀取動畫start
-.loading-overlay{
-    position: fixed;
-            top: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: $primary;
-            z-index: 999;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-}
-.loading-overlay.active{
-    top: -100vh;
-    transition: all 1s  1s;
-  
-}
-.loading-logo{
-    animation: loading 3s linear infinite;
-}
-
-@keyframes loading{
-    0%{
-        opacity: 0;
-      
-    }
-   
-    100%{
-        opacity:1;
-       
-    }
-}
-//讀取動畫end
-
-main{
-    min-height: calc(100vh - 128px);
-    // footer高度128px 因為nav有fixed所以少扣72px，不然本來也要扣
-}
-header{
-    background-color: $primary;
-    position: fixed;
-    top:0;
-    width: 100%;
-    z-index:99;
-    
-}
-nav{
-    background-color: $primary;
-    //  position: fixed;
-    // top:0;
-    // width: 100%;
-    // z-index: 2;
-   
-
-
-  
-.topnav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-// 漢堡start
-.btn-buger{
-    display: none;
-    position: relative;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    
-  }
-  .btn-buger::before{
-    position: absolute;
-    content:"";
-    width: 20px;
-    height: 1px;
-    background-color: $black-100;
-    top: 8px;
-    right: 2px;
-    transition: all .5s;
-  }
-  .btn-buger::after{
-    position: absolute;
-    content:"";
-    width: 20px;
-    height: 1px;
-    background-color: $black-100;
-    bottom: 8px;
-    right: 2px;
-    transition: all .5s;
-    
-  }
-//   絕對定位調整置中
-  .btn-buger.open::before,
-  .btn-buger.open::after {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .btn-buger.open::before {
-    transform: rotate(45deg);
-  }
-  .btn-buger.open::after {
-    transform: rotate(-45deg);
-  }
-  // 漢堡end
-
-    .nav-content{
-        width: 389px;
-        justify-content: space-between;
-        display: flex;
-        a{
-            margin: 20px 0px;
-            padding: 4px 0px;
-            color:$black-100;
-            transition: all .5s;
-            position: relative;
-            &::after{
-                position: absolute;
-                content: "";
-                bottom: 0;
-                left: 0;
-                right: 0;
-                width: 0%;
-                margin: auto;
-                color:transparent;
-                background:black;
-                height: 1px;
-            }
-        }
-
-        .nav-content_main{
-            display: flex;
-            width: 333px;
-            justify-content: space-between;
-           
-           
-        }
-    }
-}
-.nav-content a:hover{
-    color:$brand-color;
-}
-.nav-content a:after{
-    transition: all .5s;
-}
-.nav-content a:hover::after{
-    width: 100%;
-}
-
-@media(max-width:767px){
-    
-        .logo{
-            z-index: 4;
-          
-            img{
-                width: 127.41px;
-             }
-        }
-        nav{
-            .btn-buger{
-                display: block;
-                z-index: 4;
-            }
-            .logo{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%),;
-            }
-        .nav-content{
-            justify-content: flex-end;
-            
-            .nav-content_main{
-                flex-direction: column;
-                justify-content: space-evenly;
-              height: 0px;
-              overflow: hidden;
-              position: fixed;
-              top: 0;
-              right:0;
-              left: 0;
-              bottom: 0;
-              text-align: center;
-              width: 100%;
-              background-color:$primary;
-              z-index: 3;
-
-
-              .icon-account{
-                margin: 0 auto;
-              }
-              
-            }
-            .nav-content_cart{
-                z-index: 4;
-              }
-            // !! 這個不能包在nav-content_main裡面
-            .nav-content_main.open{
-                height: 100vh;
-              }
-
-        
-        }
-    }
-  
-    .nav-content_main{
-        // 要多寫一個a找的到！
-        a{
-        &:nth-child(1){
-            margin-top: 80px;
-        }
-        &:nth-child(5){
-            margin-bottom: 70px;
-        }
-        } 
-    }
-    
-
-}  
 
 .banner{
     // 993/1400 讓他等比例縮小
@@ -432,7 +213,6 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
     li{
-        width: calc( (100% - 72px) / 4);
         position: relative;
 
        
@@ -476,7 +256,6 @@ nav{
     }
     .cookie-item{
     li{
-        width: calc( (100% - 24px) / 2);
         margin-bottom: 16px;
         position: relative;
     }
@@ -501,28 +280,34 @@ nav{
     justify-content: space-between;
     
     .present-item{
-        width: calc( (100% - 72px) / 3);
         position: relative;
-        // overflow: hidden;
-        // img{
-        //     transition: all .5s;
-        // }
+        .product-img_link{
+            overflow: hidden;
+            display: block;
+            width: 100%;
+
+            img{
+                cursor: pointer;
+                transition: all 1.5s ;
+                &:hover{
+                    transform: scale(1.1);
+                }
+        }
         
-        // &:hover{
-        //     img{
-        //         transform: scale(1.2);
-        //     }
-        // }
+        }
+        
        
 
 
         .present-item_title{
+            text-align: center;
             writing-mode: vertical-lr;
             position: absolute;
             top:-51px;
             left:24px;
             letter-spacing: 8px;
             font-weight: 500;
+            z-index: 5;
         }
         
         p{
@@ -573,7 +358,6 @@ nav{
     .present-list{
         flex-direction: column;
         .present-item{
-            width: 100%;
             margin-bottom: 100px;
 
             p{
@@ -589,70 +373,5 @@ nav{
 
 }
 
-footer{
-    background-color: $secondary;
-}
 
-.footer-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    color:$primary;
-
-    li{
-        padding-top:44px;
-        padding-bottom: 24px;
-    }
-
-    .pagetop{
-        position: relative;
-        padding-right: 9px;
-        a{
-            color:$primary;
-            font-family:  'Noto Serif TC', serif;
-            font-weight: 300;
-            transition: all .5s;
-            &:hover{
-                color:$hover-color;
-
-                &::before{
-                    background-color: $hover-color;
-                }
-            }
-            &::before{
-                position: absolute;
-                content: "";
-                height: 80px;
-                width: 1px;
-                top:-10px;
-                right: 0px;
-                background-color:$primary;
-                transition: all .5s;
-            }
-        }
-
-      
-    }
-}
-.instagram{
-    display: flex;
-    font-size: 12px;
-    align-items: center;
-    font-family:  'Noto Serif TC', serif;
-    font-weight: 300;
-    padding-bottom: 24px;
-    color:$primary;
-
-    img{
-        margin-right: 16px;
-        color:$primary;
-        font-weight: 300;
-    }
-    
-}
-.copyright{
-    font-size: 12px;
-    font-family:  'Noto Serif TC', serif;
-    font-weight: 300;
-}
 

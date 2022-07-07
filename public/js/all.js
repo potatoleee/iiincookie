@@ -1,5 +1,6 @@
 
 
+new WOW().init();
 
 // loading 動畫start
 $(window).on('load',function(){
@@ -43,40 +44,42 @@ $('.faq-list_title').click(function(e){
 
 })
 
+
+
 //每一次縮放視窗的時候執行
-
-
 $(window).resize(function(){
     gsapAnimate()
-
 })
 
+
 function gsapAnimate(){
-if( $(window).width() >= 768){
-    $(window).scroll(function(){
-        offsetTop = $(window).scrollTop()
-        // console.log(offsetTop/10)
-        //x:“偏移”,“時間：數字越大呈現時間越久"
-        gsap.to(".about-text", { x:offsetTop/3, duration: 1})
-        
-    })
-}else{
-    $(window).scroll(function(){
-        offsetTop = $(window).scrollTop()
-        // console.log(offsetTop/10)
-        //x:“偏移”,“時間：數字越大呈現時間越久"
-        gsap.to(".about-text", { y:-offsetTop/6, duration: 1})
-        
-    })
-}
+        if( $(window).width() >= 768 ){
+            $(window).scroll(function(){
+                offsetTop = $(window).scrollTop()
+                // console.log(offsetTop/10)
+                //x:“偏移”,“時間：數字越大呈現時間越久"
+                gsap.to(".about-text", { y:-offsetTop/5, duration: 1})
+                
+            })//scroll end
+        }else{
+            $(window).scroll(function(){
+                offsetTop = $(window).scrollTop()
+                // console.log(offsetTop/10)
+                //x:“偏移”,“時間：數字越大呈現時間越久"
+                gsap.to(".about-text", { y:-offsetTop/6, duration: 1})
+            
+        })//scroll end
+    }
 }
 
+//要在外面才可以執行
 gsapAnimate()
 
 
 
-})// document end
-new WOW().init();
+
+})// document ready end
+
 
 
 
