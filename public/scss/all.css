@@ -174,11 +174,6 @@ p {
 }
 
 .col-4 {
-  width: calc(100% / 3 - 24px);
-  margin: 0 12px;
-}
-
-.col-4 {
   width: calc((100% - 48px) /3);
 }
 
