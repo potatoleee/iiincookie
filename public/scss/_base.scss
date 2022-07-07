@@ -9,7 +9,6 @@
 
 }
 .container{
-   
     max-width: 1172px;
     margin: 0 auto;
     padding-left: 16px;
@@ -22,7 +21,7 @@
 }
 
 body{
-   font-family: 'Noto Sans TC', sans-serif' , Noto Serif TC', serif;
+   font-family: 'Noto Sans TC', sans-serif' , ' Noto Serif TC', serif',  sans-serif;
    font-weight: 400;
    background-color: #F0F0F0;
    color:#161A14;
@@ -104,6 +103,7 @@ p{
     border: none;
     font-size: 16px;
     line-height:inherit;
+    
     &:hover{
         background-color: $btn-hover;
     }
