@@ -237,8 +237,8 @@ input[type="radio"] {
 
 .loading-overlay.active {
   opacity: 0;
-  -webkit-transition: all 1s  1s;
-  transition: all 1s  1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   z-index: -99;
 }
 
@@ -1589,6 +1589,10 @@ input[name="password-login"] {
 
 .radio-order ul {
   margin-left: 48px;
+}
+
+.radio-list {
+  margin-bottom: 8px;
 }
 
 .btn-order {

@@ -45,29 +45,29 @@
         <form class="order">
           <h4>訂單資訊</h4>
           <label class="label-order"for="name">姓名<span>*</span></label>
-          <input class="input-primary input-order " type="text" name="name" id="order" value="李餅乾">
+          <input class="input-primary input-order " type="text" name="name" id="order" placeholder="例:李餅乾">
 
           <label class="label-order" for="phone">聯絡電話<span>*</span></label>
-          <input class="input-primary input-order"type="phone" name="phone" id="order" value="0912-333-456">
+          <input class="input-primary input-order"type="phone" name="phone" id="order" placeholder="例:0912-333-456">
 
           <label class="label-order" for="email">電子郵件<span>*</span></label>
-          <input class="input-primary input-order"type="email" name="name" id="order"  value="iiincookie@gmail.com">
+          <input class="input-primary input-order"type="email" name="name" id="order"  placeholder="例:iiincookie@gmail.com">
 
           <label class="label-order" for="address">寄送地址<span>*</span></label>
-          <input class="input-primary input-order input-delivery" type="text" name="address" id="order"  value="台中市台灣大道一段999號">
+          <input class="input-primary input-order input-delivery" type="text" name="address" id="order"  placeholder="例:台中市台灣大道一段999號">
           <!-- 訂單資訊上半 -->
            <!-- 運送方式 start-->
            <div class="radio-order">
            <p>運送方式</p>
           <ul >
-            <li>  
+            <li class="radio-list">  
               <input type="radio" name="delivery" id="selfPick">
               <label for="selfPick">自行取貨</label>
             </li>
           
             <li>  
               <input type="radio" name="delivery" id="homeDelivery" checked>
-              <label for="honeDelivery">宅配 </label>
+              <label for="honeDelivery">宅配 NT$130 </label>
             </li>
           </ul>
         </div>
@@ -76,7 +76,7 @@
           <div class="radio-order">
             <p>付款方式</p>
            <ul >
-             <li>  
+             <li  class="radio-list" >  
                <input type="radio" name="pay" id="credit" checked>
                <label for="credit">信用卡</label>
              </li>
@@ -143,11 +143,11 @@
             </li>
             <li class="deliveryFree">
               <p>運費</p>
-              <p>NT$60</p>
+              <p>NT$130</p>
             </li>
             <li class="total">
               <p>總計</p>
-              <p>NT$760</p>
+              <p>NT$830</p>
             </li>
           </ul>
 
