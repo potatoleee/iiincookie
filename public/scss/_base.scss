@@ -139,8 +139,14 @@ p{
 }
 
 input{
-    -webkit-appearance: none;
+    // 取消ios預設樣式
     appearance: none;
 }
+input[type="checkbox"]{
+    appearance: checkbox;
+}
 
+input[type="radio"]{
+    appearance: radio;
+}
 
