@@ -103,7 +103,7 @@ p{
     border: none;
     font-size: 16px;
     line-height:inherit;
-    
+
     &:hover{
         background-color: $btn-hover;
     }
@@ -136,6 +136,11 @@ p{
 
 .wrap{
     margin-top: 72px;
+}
+
+input{
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 

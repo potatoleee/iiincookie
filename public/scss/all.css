@@ -199,6 +199,12 @@ p {
   margin-top: 72px;
 }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
 .loading-overlay {
   position: fixed;
   top: 0;
