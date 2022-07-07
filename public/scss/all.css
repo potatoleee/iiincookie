@@ -201,8 +201,8 @@ p {
 
 .loading-overlay.active {
   top: -100vh;
-  -webkit-transition: all 1s 1s;
-  transition: all 1s 1s;
+  -webkit-transition: all 1s  1s;
+  transition: all 1s  1s;
 }
 
 .loading-logo {
@@ -464,7 +464,7 @@ nav .nav-content .nav-content_main {
     padding-right: 10px;
   }
   .banner .banner-text .banner-text_content {
-    padding-top: 0px;
+    padding-top: 35px;
     font-size: 12px;
   }
 }
@@ -869,7 +869,7 @@ footer {
   margin-top: 72px;
 }
 
-.cookie-wrapper h2 {
+.product-title {
   text-align: center;
   padding-top: 32px;
   padding-bottom: 48px;
@@ -969,6 +969,9 @@ footer {
   .product-list .product-item .btn-primary {
     font-size: 12px;
     padding: 8px 0px;
+  }
+  .product-title {
+    font-size: 24px;
   }
 }
 
@@ -1633,6 +1636,10 @@ input[name="password-login"] {
 
 .cost .total {
   margin-top: 24px;
+}
+
+.input-delivery {
+  margin-bottom: 24px;
 }
 
 @media (max-width: 767px) {
