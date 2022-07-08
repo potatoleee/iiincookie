@@ -232,14 +232,14 @@ input[type="radio"] {
 
 .loading-overlay.active {
   opacity: 0;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 1s 1s;
+  transition: all 1s 1s;
   z-index: -99;
 }
 
 .loading-logo {
-  -webkit-animation: loading 3s linear infinite;
-          animation: loading 3s linear infinite;
+  -webkit-animation: loading 2s linear infinite;
+          animation: loading 2s linear infinite;
 }
 
 @-webkit-keyframes loading {
